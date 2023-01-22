@@ -1,4 +1,4 @@
-# <<website_name>>
+# Solr Savr
 
 ## Team Name: <<team_name>>
 
@@ -34,17 +34,20 @@
 
 << list your languages & tools below: >>
 
-*  << languages >>
-	* << list the langauge & reason for using it >>
+### Programming Languages
+* HTML - A mark-up language that uses semantic structures.
+* CSS Tailwind - Cascade style sheets are used to style the website.
+* Javascript - Core programming language used for incorporating third-party libraries and client side webpage behaviour.
 
 * << tools >>
   * << list the tool & reason for using it >>
 
 ## Initial MVP idea:
 
-Detail plans and scope of project here....
+We planned to create an app that would allow the user to see how much money they could save each year by getting solar panels installed on their homes. This would also include the amount of time it would take to make up for the installation fees for the solar panels.
+The calculations would be done taking in several factors such as the country, the energy costs per year in the selected country, the average solar energy produced per year, the type of home you have and the number of solar panels installed.
 
-<< consider talking about how you planned as a team here and what tools were implemented >>
+To be more attention grabbing welcoming we also wanted to create a home page with energy consumption facts and an About Us page for users to see who made the app.
 
 ### Actual idea & content:
 
@@ -55,7 +58,7 @@ Detail plans and scope of project here....
 ## Design
 
 ### Color Scheme:
-<< detail your color palette here >>
+The colour scheme is a traditional light green and black. This fits the spirit and overall intentions of the app website to promote solar energy and lead to a greener Earth.
 
 ### Typography:
 << what font pairings did your team consider and pick? And why? >>
@@ -79,9 +82,7 @@ Detail plans and scope of project here....
 <details>
 <summary>- Desktop Wireframes:</summary>
 
-<< put all your mobile wireframes here... >>
-
-<< consider adding some notes to detail the planned components or functionality >>
+[Desktop Wireframe](build/assets/media/wireframes/wireframe-solr-savr.png)
 
 </details>
 
@@ -103,4 +104,4 @@ Detail plans and scope of project here....
 << you may have already done this above in the Imagery section, but just in case, please attribute Media acquisition here >>
 
 ### Acknowledgements
-<< personal thanks and praise 🙌 >>
+The Hackathon team for putting together this event.
