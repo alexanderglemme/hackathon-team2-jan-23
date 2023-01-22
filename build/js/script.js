@@ -1,9 +1,10 @@
-var slider = document.getElementById('default-range');
-var sliderOutput = document.getElementById('output-m2')
+var solarPanelsSlider = document.getElementById('default-range');
+var solarPanelsSliderOutput = document.getElementById('output-m2')
 
-sliderOutput.innerHTML = slider.value;
+solarPanelsSliderOutput.innerHTML = solarPanelsSlider.value;
 
-slider.oninput = function() {
-    sliderOutput.innerHTML = this.value
+solarPanelsSlider.oninput = function() {
+    solarPanelsSliderOutput.innerHTML = this.value
 
 }
+
