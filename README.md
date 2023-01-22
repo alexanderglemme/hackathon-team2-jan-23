@@ -35,9 +35,9 @@
 << list your languages & tools below: >>
 
 ### Programming Languages
-HTML - A mark-up language that uses semantic structures.
-CSS Tailwind - Cascade style sheets are used to style the website.
-Javascript - Core programming language used for incorporating third-party libraries and client side webpage behaviour.
+* HTML - A mark-up language that uses semantic structures.
+* CSS Tailwind - Cascade style sheets are used to style the website.
+* Javascript - Core programming language used for incorporating third-party libraries and client side webpage behaviour.
 
 * << tools >>
   * << list the tool & reason for using it >>
