@@ -789,6 +789,51 @@ video {
   opacity: 0.5;
 }
 
+/* Solr Calc Page */
+.home-size-s {
+  background-color: rgb(34 197 94);
+  border: none;
+  color: white;
+  padding: 11px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.home-size-m {
+  background-color: rgb(34 197 94);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.home-size-l {
+  background-color: rgb(34 197 94);
+  border: none;
+  color: white;
+  padding: 19px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.slider {
+  background-color: rgb(34 197 94); 
+  border: none;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 @media (prefers-color-scheme: dark) {
   .dark\:text-white {
     --tw-text-opacity: 1;
