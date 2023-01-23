@@ -16,6 +16,9 @@
                 <a href="index.html">☀️ SolrSavr</a>
             </h1>
             <div>
+                <div id="mobile-nav-button" class="text-3xl sm:hidden cursor-pointer hover:opacity-50 relative w-8 h-8">
+                    &#9776;
+                </div>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="index.html" class="hover:text-white">Home</a>
                     <a href="solr_calc.html" class="hover:text-white">Calculator</a>
@@ -23,12 +26,40 @@
                 </nav>
             </div>
         </section>
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+            <button class="text-8xl self-end px-6 hover:opacity-50">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="./index.html" class="w-full text-center py-6 hover:opacity-50">Home</a>
+                <a href="./solr_calc.html" class="w-full text-center py-6 hover:opacity-50">Calculator</a>
+                <a href="#" class="w-full text-center py-6 hover:opacity-50">About Us</a>
+            </nav>
+        </section>
     </header>
     <main class="max-w-6xl mx-auto">
-        <section id="hero"
-            class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+        <section id="hero"></section>
+            <div class="calc">
+                <h2 class="text-3xl text-center m-14">To get started select your home below:</h2>
+                <div id="houses" class="flex justify-center items-end mb-20 gap-5 text-center">
+                    <div> 
+                        <img class="w-48 m-4" src="./assets/media/images/small-house.png" alt="Small house.">
+                        <button class="home-size-s house bg-green-500 p-4 rounded-2xl hover:bg-green-600 hover:text-white">Small House</button>
+                    </div>
+                    <div>
+                        <img class="w-48 m-4" src="./assets/media/images/medium-house.png" alt="Medium House">
+                        <button class="home-size-m house bg-green-500 p-4 rounded-2xl hover:bg-green-600 hover:text-white">Medium House</button>
+                    </div>
+                    <div>
+                        <img class="w-48 m-4" src="./assets/media/images/large-house.png" alt="Large House">
+                        <button class="home-size-l house bg-green-500 p-4 rounded-2xl hover:bg-green-600 hover:text-white">Large House</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
             <div>
-                <h2>Please choose the number of solar panels:</h2>
+                <h2 class="text-3xl text-center mt-20 mb-8">Please choose the number of solar panels:</h2>
                 <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Default
                     range</label>
                 <input id="default-range" type="range" value="50"
@@ -39,20 +70,30 @@
         <section>
             <!-- The way i set this up in the script.js file is so that choosing the house is the last step and by clicking a house you automatically display the savings report. -->
             <div class="calc">
-                <h2>Choose a house below and see your result:</h2>
-                <div class="home-size-s house" id="2594">Small House</div>
-                <div class="home-size-m house" id="3594">Medium House</div>
-                <div class="home-size-l house" id="4594">Large House</div>
+                <h2 class="text-3xl text-center mt-20">Choose a house below and see your result:</h2>
+                <div  class="flex justify-center items-end mb-20 gap-5 text-center">
+                    <div class="home-size-s house" id="2594">
+                        <img class="w-48 m-4" src="./assets/media/images/small-house.png" alt="Small house.">
+                        Small House
+                    </div>
+                    <div class="home-size-m house" id="3594">
+                        <img class="w-48 m-4" src="./assets/media/images/medium-house.png" alt="Medium House">
+                        Medium House
+                    </div>
+                    <div class="home-size-l house" id="4594">
+                        <img class="w-48 m-4" src="./assets/media/images/large-house.png" alt="Large House">
+                        Large House
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="report"
-            class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
-            <article id="report-article" class="flex flex-col justify-center">
+        <section id="report"></section>
+            <article id="report-article" class="flex flex-col justify-center items-center">
                 <h2 id="report-heading"
                     class="max-w-md text-4xl font-bold text-center sm:text-5xl text-slate-900 py-10">
 
                 </h2>
-                <p id="report-paragraph" class="max-w-md text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">
+                <p id="report-paragraph" class="max-w-md text-2xl mt-4 text-center mb-10">
 
                 </p>
             </article>
