@@ -66,7 +66,9 @@ We used the default font for Tailwind CSS, which is the Inter font. This font is
 ### Imagery:
 Images in about page were taken from each user profiles in Slack channel.
 
-<< ensure source attribution is maintained, and that you have used copyright free material >>
+Images in the home page were taken from pexels.com[https://www.pexels.com/]
+  - Photo by Pixabay: https://www.pexels.com/photo/blue-solar-panel-board-356036/
+  - Photo by Scott Webb: https://www.pexels.com/photo/low-angle-photography-of-high-rise-building-305833/
 
 ### Wireframes:
 
