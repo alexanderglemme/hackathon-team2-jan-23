@@ -32,32 +32,39 @@ function calculateAnnualSavings() {
     //this.id is the id of the clicked div which is set to the house's annual kwh
     let clickedHouseAnnualKwhConsumption = parseInt(this.id);
 
-    let annualSavedKwh = annualOutputKwh - clickedHouseAnnualKwhConsumption;
+    let annualCostOfElectricity = clickedHouseAnnualKwhConsumption * 0.45;
 
-    let annualElectricityCostEuros = clickedHouseAnnualKwhConsumption / 0.45;
+    let annualSavingsEuros = annualOutputKwh * 0.45;
 
-    let annualGeneratedEurosFromPanels = annualSavedKwh / 0.45;
-
-    let annualSavingsEuros = annualElectricityCostEuros - annualGeneratedEurosFromPanels;
-
-    reportCalculations(annualSavingsEuros)
+    reportCalculations(annualSavingsEuros, annualCostOfElectricity)
 
 }
 
-function reportCalculations(num) {
+function reportCalculations(savings, costs) {
     let heading = document.getElementById('report-heading');
     let paragraph = document.getElementById('report-paragraph');
-
-    heading.innerHTML = "Your total estimated annual savings comes up to: " + "€" + Math.round(num);
-    paragraph.innerHTML = `
-    Note that this is an estimate.
-    The way we calculated these figures was by; (1)
-    taking the average annual electricity consumption 
-    of your inputed household and dividing that with 
-    the average price for electicity (€0.45/kWh); 
-    (2) calculated the expected output of solar panels 
-    and multipluing that by the area of the panels that
-     you could have installed and (3) subtracting that 
-     with your estimated annual electricity cost.
-     `
+    let earnings;
+    if (costs - savings < 0) {
+        earnings = Math.abs(costs - savings)
+        heading.innerHTML = "If you install " + solarPanelsSlider.value
+            + "m2 of solar panels, you'll be selling energy for a value of "
+            + "€" + Math.round(earnings) + " annually!"
+        paragraph.innerHTML = `
+                               This means that you are producing more green
+                               energy than you are consuming, and that you'll 
+                               be making money off of the surplus that you're 
+                               providing to the regional energy grid.
+                              `
+    } else {
+        heading.innerHTML = "Your total estimated annual savings comes up to: "
+            + "€" + Math.round(savings);
+        paragraph.innerHTML = `
+                               Note that this is an estimate.
+                               The way we calculated these figures was by 
+                               taking the expected kWh output of your
+                               solar panels and multiplying that by the 
+                               average cost of electricity in Ireland 
+                               (45 cent per kWh).
+                             `
+    }
 }
