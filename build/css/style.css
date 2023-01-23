@@ -550,8 +550,8 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .mb-8 {
@@ -570,8 +570,8 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-10 {
@@ -658,10 +658,6 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -872,6 +868,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .sm\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -886,10 +890,6 @@ video {
 
   .sm\:items-end {
     align-items: flex-end;
-  }
-
-  .sm\:justify-end {
-    justify-content: flex-end;
   }
 
   .sm\:text-5xl {
