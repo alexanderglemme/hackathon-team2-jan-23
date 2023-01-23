@@ -106,6 +106,7 @@ Reset links to optimize for opt-in styling instead of opt-out.
 a {
   color: inherit;
   text-decoration: inherit;
+  text-align: center;
 }
 
 /*
@@ -798,6 +799,14 @@ video {
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
+}
+
+.site-buttons {
+  color: black;
+}
+
+.site-buttons:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
