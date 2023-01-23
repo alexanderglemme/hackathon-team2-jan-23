@@ -40,5 +40,5 @@ function calculateAnnualSavings() {
     let annualSavedKwh =  annualOutputKwh - clickedHouseAnnualKwhConsumption;
     
     let annualSavingsEuros = annualSavedKwh / 0.45;
-    
+
 }
