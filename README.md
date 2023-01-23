@@ -30,9 +30,6 @@
 
 ## Technology:
 
-<< Detail your techstack here, and why you chose it. >>
-
-<< list your languages & tools below: >>
 
 ### Programming Languages
 * HTML - A mark-up language that uses semantic structures.
@@ -61,12 +58,14 @@ To be more attention grabbing welcoming we also wanted to create a home page wit
 The colour scheme is a traditional light green and black. This fits the spirit and overall intentions of the app website to promote solar energy and lead to a greener Earth.
 
 ### Typography:
-<< what font pairings did your team consider and pick? And why? >>
+We used the default font for Tailwind CSS, which is the Inter font. This font is a sans-serif font that is easy to read and is very modern.
 
 ### Imagery:
-<< Detail imagery used to compliment your build & theme >>
+Images in about page were taken from each user profiles in Slack channel.
 
-<< ensure source attribution is maintained, and that you have used copyright free material >>
+Images in the home page were taken from pexels.com[https://www.pexels.com/]
+  - Photo by Pixabay: https://www.pexels.com/photo/blue-solar-panel-board-356036/
+  - Photo by Scott Webb: https://www.pexels.com/photo/low-angle-photography-of-high-rise-building-305833/
 
 ### Wireframes:
 

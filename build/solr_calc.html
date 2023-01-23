@@ -9,7 +9,7 @@
     <title>Solar Saver</title>
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen flex flex-col">
     <header class="bg-green-500 sticky top-0 z-10">
         <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-3xl font-medium">
@@ -17,9 +17,9 @@
             </h1>
             <div>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
-                    <a href="index.html" class="hover:opacity-50">Home</a>
-                    <a href="solr_calc.html" class="hover:opacity-50">Calculator</a>
-                    <a href="about.html" class="hover:opacity-50">About Us</a>
+                    <a href="index.html" class="hover:text-white">Home</a>
+                    <a href="solr_calc.html" class="hover:text-white">Calculator</a>
+                    <a href="about.html" class="hover:text-white">About Us</a>
                 </nav>
             </div>
         </section>
@@ -27,6 +27,14 @@
     <main class="max-w-6xl mx-auto">
         <section id="hero"
             class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+            <div class="calc">
+                <h2>To get started select your home below:</h2>
+                <div> <button class="home-size-s house">Small House</button></div>
+                <div> <button class="home-size-m house">Medium House</button></div>
+                <div> <button class="home-size-l house">Large House</button></div>
+            </div>
+        </section>
+        <section>
             <div>
                 <h2>Please choose the number of solar panels:</h2>
                 <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Default
@@ -59,8 +67,8 @@
 
     </main>
 
-    <footer class="bg-green-500 text-center p-4">
-        <p>Copyright &copy; 2022 - All Rights Reserved</p>
+    <footer class="bg-green-500 text-center p-4 mt-auto">
+        <p>Copyright &copy; 2023 - All Rights Reserved</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>
