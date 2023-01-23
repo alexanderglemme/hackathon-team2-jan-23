@@ -29,35 +29,48 @@
             class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
             <div class="calc">
                 <h2>To get started select your home below:</h2>
-                <div class="home-size-s house" id="1594">Small House</div>
-                <div class="home-size-m house" id="3594">Medium House</div>
-                <div class="home-size-l house" id="5594">Large House</div>
+                <div> <button class="home-size-s house">Small House</button></div>
+                <div> <button class="home-size-m house">Medium House</button></div>
+                <div> <button class="home-size-l house">Large House</button></div>
             </div>
         </section>
         <section>
             <div>
                 <h2>Please choose the number of solar panels:</h2>
-                <!-- <button class="slider">Slider</button> -->
                 <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Default
                     range</label>
                 <input id="default-range" type="range" value="50"
                     class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
-               <span id="output-m2">Output</span>
+                <span id="output-m2">Output</span>
             </div>
         </section>
         <section>
-            <div>
-                <h3>Press the button below for your result:</h3>
-                <button class="home-size-s">Calculate</button>
+            <!-- The way i set this up in the script.js file is so that choosing the house is the last step and by clicking a house you automatically display the savings report. -->
+            <div class="calc">
+                <h2>Choose a house below and see your result:</h2>
+                <div class="home-size-s house" id="2594">Small House</div>
+                <div class="home-size-m house" id="3594">Medium House</div>
+                <div class="home-size-l house" id="4594">Large House</div>
             </div>
         </section>
+        <section id="report"
+            class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+            <article id="report-article" class="flex flex-col justify-center">
+                <h2 id="report-heading"
+                    class="max-w-md text-4xl font-bold text-center sm:text-5xl text-slate-900 py-10">
 
-   </main>
+                </h2>
+                <p id="report-paragraph" class="max-w-md text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">
+
+                </p>
+            </article>
+
+    </main>
+
     <footer class="bg-green-500 text-center p-4">
-        <p>Copyright &copy; 2022 - All Rights Reserved</p>
+        <p>Copyright &copy; 2023 - All Rights Reserved</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>
-
 
 </html>
