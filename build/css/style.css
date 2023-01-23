@@ -533,6 +533,22 @@ video {
   z-index: 10;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-20 {
+  margin: 5rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-14 {
+  margin: 3.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -542,8 +558,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
+.mt-auto {
+  margin-top: auto;
 }
 
 .mt-4 {
@@ -558,8 +574,20 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mt-auto {
-  margin-top: auto;
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -606,6 +634,18 @@ video {
   width: 9rem;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -640,6 +680,10 @@ video {
           appearance: none;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -652,8 +696,16 @@ video {
   flex-wrap: wrap;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -670,6 +722,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -696,6 +752,18 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .bg-green-500 {
@@ -776,6 +844,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-bottom {
+  vertical-align: bottom;
 }
 
 .text-3xl {
@@ -865,6 +937,20 @@ video {
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
+}
+
+.active\:bg-inherit:active {
+  background-color: inherit;
+}
+
+.active\:bg-green-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.active\:text-white:active {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (prefers-color-scheme: dark) {

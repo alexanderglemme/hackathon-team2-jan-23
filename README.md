@@ -70,6 +70,10 @@ Images in the home page were taken from pexels.com[https://www.pexels.com/]
   - Photo by Pixabay: https://www.pexels.com/photo/blue-solar-panel-board-356036/
   - Photo by Scott Webb: https://www.pexels.com/photo/low-angle-photography-of-high-rise-building-305833/
 
+Images in the calculator page were taken from pngfind.com[https://www.pngfind.com/]
+  - https://www.pngfind.com/download/ixwboTw_-house-clipart-cute-house-pink-houses-cottage/
+  - https://www.pngfind.com/download/bioihm_house-png-clip-art-house-png-transparent-png/
+  - https://www.pngfind.com/download/imRwwh_white-house-png-clip-art-clip-art-transparent/
 ### Wireframes:
 
 <details>
