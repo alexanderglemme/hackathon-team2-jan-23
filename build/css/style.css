@@ -550,8 +550,8 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mb-8 {
@@ -562,20 +562,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .block {
@@ -868,12 +864,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .sm\:mt-40 {
-    margin-top: 10rem;
+  .sm\:mt-14 {
+    margin-top: 3.5rem;
   }
 
   .sm\:w-1\/2 {
