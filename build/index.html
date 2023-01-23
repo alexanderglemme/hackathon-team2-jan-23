@@ -16,12 +16,25 @@
                 <a href="index.html">☀️ SolrSavr</a>
             </h1>
             <div>
+                <div id="mobile-nav-button" class="text-3xl sm:hidden cursor-pointer hover:opacity-50 relative w-8 h-8">
+                    &#9776;
+                </div>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="index.html" class="hover:text-white">Home</a>
                     <a href="solr_calc.html" class="hover:text-white">Calculator</a>
                     <a href="about.html" class="hover:text-white">About Us</a>
                 </nav>
             </div>
+        </section>
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+            <button class="text-8xl self-end px-6 hover:opacity-50">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="./index.html" class="w-full text-center py-6 hover:opacity-50">Home</a>
+                <a href="./solr_calc.html" class="w-full text-center py-6 hover:opacity-50">Calculator</a>
+                <a href="#" class="w-full text-center py-6 hover:opacity-50">About Us</a>
+            </nav>
         </section>
     </header>
     <main class="max-w-6xl mx-auto">
@@ -98,6 +111,7 @@
     <footer class="bg-green-500 text-center p-4">
         <p>Copyright &copy; 2023 - All Rights Reserved</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -30,6 +30,9 @@
 
 ## Technology:
 
+<< Detail your techstack here, and why you chose it. >>
+
+<< list your languages & tools below: >>
 
 ### Programming Languages
 * HTML - A mark-up language that uses semantic structures.
